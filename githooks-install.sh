@@ -9,6 +9,11 @@ if [[ ${parts[0]} -lt 2 ]] || [[ ${parts[0]} -eq 2 && ${parts[1]} -lt 9 ]]; then
     exit 1
 fi
 
+if ! command -v gofmt &>/dev/null; then
+    echo "Cannot find gofmt on your path"
+    exit 1
+fi
+
 mkdir -p ~/.githooks
 curl -fsSL "https://raw.githubusercontent.com/darwish/githooks/raw/master/pre-commit" -o ~/.githooks/pre-commit
 chmod +x ~/.githooks/pre-commit

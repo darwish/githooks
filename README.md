@@ -1,3 +1,8 @@
+# Requirements
+
+1. `gofmt` must be installed and on your `PATH`
+2. You must have git version 2.9+ (June 2016) installed
+
 # Installation
 
 ## Using Script
@@ -16,7 +21,7 @@ sh githooks-install.sh
 chmod +x ~/.githooks/pre-commit
 ```
 
-3. Configure the git global hooks path (requires git 2.9+ (June 2016):
+3. Configure the git global hooks path:
 
 ```bash
 git config --global core.hooksPath ~/.githooks
