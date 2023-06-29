@@ -8,7 +8,7 @@
 ## Using Script
 
 ```bash
-curl -fsSL "https://raw.githubusercontent.com/darwish/githooks/raw/master/githooks-install.sh" -o githooks-install.sh
+curl -fsSL "https://raw.githubusercontent.com/darwish/githooks/master/githooks-install.sh" -o githooks-install.sh
 sh githooks-install.sh && rm githooks-install.sh
 ```
 

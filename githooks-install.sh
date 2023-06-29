@@ -15,7 +15,7 @@ if ! command -v gofmt &>/dev/null; then
 fi
 
 mkdir -p ~/.githooks
-curl -fsSL "https://raw.githubusercontent.com/darwish/githooks/raw/master/pre-commit" -o ~/.githooks/pre-commit
+curl -fsSL "https://raw.githubusercontent.com/darwish/githooks/master/pre-commit" -o ~/.githooks/pre-commit
 chmod +x ~/.githooks/pre-commit
 
 git config --global core.hooksPath ~/.githooks
