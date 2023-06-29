@@ -19,3 +19,4 @@ curl -fsSL "https://raw.githubusercontent.com/darwish/githooks/raw/master/pre-co
 chmod +x ~/.githooks/pre-commit
 
 git config --global core.hooksPath ~/.githooks
+echo "Successfully added global pre-commit hook: ~/.githooks/pre-commit"
